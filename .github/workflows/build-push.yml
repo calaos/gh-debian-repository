@@ -39,7 +39,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           # relative path to the place where source code with Dockerfile is located
-          context: "{{defaultContext}}:docker"
+          context: "{{defaultContext}}:."
           # Note: tags has to be all lower-case
           tags: |
             ghcr.io/calaos/debian-repository:latest
