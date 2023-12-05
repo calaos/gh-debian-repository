@@ -7,10 +7,10 @@ RUN cd $GOPATH/src/github.com/calaos/gh-debian-repository && \
 
 ARG ARCH
 FROM ${ARCH}alpine as release
-COPY --from=build /go/bin/debian-repository /
+COPY --from=build /go/bin/gh-debian-repository /
 
 VOLUME ["/cache"]
 
 ENV REPOSITORY_CACHE=/cache
 
-ENTRYPOINT ["/debian-repository"]
+ENTRYPOINT ["/gh-debian-repository"]
