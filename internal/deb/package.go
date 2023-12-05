@@ -17,8 +17,8 @@ import (
 	"github.com/stapelberg/godebiancontrol"
 )
 
-var Suites = []string{"bionic", "xenial"}
-var Architectures = []string{"arm64", "armhf", "amd64"}
+var Suites = []string{"bookworm"}
+var Architectures = []string{"arm64", "armhf", "amd64", "all"}
 
 type Key struct {
 	Name         string
