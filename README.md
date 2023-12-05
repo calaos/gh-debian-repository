@@ -8,7 +8,7 @@ Run docker compose (with nginx-proxy):
 
 ```
 server:
-  image: ayufan/debian-repository
+  image: calaos/gh-debian-repository
   restart: always
   expose:
   - "5000"

@@ -1,4 +1,4 @@
-module github.com/ayufan/debian-repository
+module github.com/calaos/gh-debian-repository
 
 go 1.17
 

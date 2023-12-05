@@ -8,9 +8,9 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/ayufan/debian-repository/internal/deb"
-	"github.com/ayufan/debian-repository/internal/github_client"
-	"github.com/ayufan/debian-repository/internal/http_helpers"
+	"github.com/calaos/gh-debian-repository/internal/deb"
+	"github.com/calaos/gh-debian-repository/internal/github_client"
+	"github.com/calaos/gh-debian-repository/internal/http_helpers"
 )
 
 func mainHandler(w http.ResponseWriter, r *http.Request) {

@@ -18,8 +18,8 @@ import (
 	"github.com/blakesmith/ar"
 	"github.com/ulikunitz/xz"
 
-	"github.com/ayufan/debian-repository/internal/multi_hash"
-	"github.com/ayufan/debian-repository/internal/repository_cache"
+	"github.com/calaos/gh-debian-repository/internal/multi_hash"
+	"github.com/calaos/gh-debian-repository/internal/repository_cache"
 )
 
 func enumerateDebArchive(r io.Reader, fn func(name string, r io.Reader) error) error {

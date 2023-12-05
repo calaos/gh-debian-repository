@@ -1,8 +1,8 @@
 ARG ARCH
 FROM ${ARCH}golang:alpine as build
 
-COPY . $GOPATH/src/github.com/ayufan/debian-repository
-RUN cd $GOPATH/src/github.com/ayufan/debian-repository && \
+COPY . $GOPATH/src/github.com/calaos/gh-debian-repository
+RUN cd $GOPATH/src/github.com/calaos/gh-debian-repository && \
   go install -v ./...
 
 ARG ARCH

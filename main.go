@@ -9,11 +9,11 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/ayufan/debian-repository/internal/apache_log"
-	"github.com/ayufan/debian-repository/internal/deb"
-	"github.com/ayufan/debian-repository/internal/deb_cache"
-	"github.com/ayufan/debian-repository/internal/deb_key"
-	"github.com/ayufan/debian-repository/internal/github_client"
+	"github.com/calaos/gh-debian-repository/internal/apache_log"
+	"github.com/calaos/gh-debian-repository/internal/deb"
+	"github.com/calaos/gh-debian-repository/internal/deb_cache"
+	"github.com/calaos/gh-debian-repository/internal/deb_key"
+	"github.com/calaos/gh-debian-repository/internal/github_client"
 )
 
 var signingKey *deb_key.Key

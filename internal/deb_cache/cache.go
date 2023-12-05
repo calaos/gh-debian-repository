@@ -6,8 +6,8 @@ import (
 
 	"github.com/golang/groupcache/lru"
 
-	"github.com/ayufan/debian-repository/internal/deb"
-	"github.com/ayufan/debian-repository/internal/github_client"
+	"github.com/calaos/gh-debian-repository/internal/deb"
+	"github.com/calaos/gh-debian-repository/internal/github_client"
 )
 
 type Cache struct {

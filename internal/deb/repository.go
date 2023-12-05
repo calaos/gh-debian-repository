@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ayufan/debian-repository/internal/deb_key"
-	"github.com/ayufan/debian-repository/internal/helpers"
-	"github.com/ayufan/debian-repository/internal/multi_hash"
+	"github.com/calaos/gh-debian-repository/internal/deb_key"
+	"github.com/calaos/gh-debian-repository/internal/helpers"
+	"github.com/calaos/gh-debian-repository/internal/multi_hash"
 )
 
 type Repository struct {
@@ -38,9 +38,6 @@ func (p *Repository) Architectures() map[string]struct{} {
 
 	// get all other architectures
 	for _, deb := range p.debs {
-		if deb.Architecture() == "all" {
-			continue
-		}
 		archs[deb.Architecture()] = struct{}{}
 	}
 	return archs
